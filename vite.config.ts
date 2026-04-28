@@ -3,6 +3,9 @@ import vue from '@vitejs/plugin-vue'
 import { fileURLToPath, URL } from 'node:url'
 import wasm from 'vite-plugin-wasm'
 
+const githubRepo = process.env.GITHUB_REPOSITORY?.split('/')[1]
+const githubPagesBase = githubRepo ? `/${githubRepo}/` : '/'
+
 export default defineConfig({
   plugins: [vue(), wasm()],
   publicDir: 'static',
@@ -17,5 +20,5 @@ export default defineConfig({
     sourcemap: false,
     target: 'esnext',
   },
-  base: process.env.CI === 'true' ? './' : '/',
+  base: process.env.GITHUB_ACTIONS === 'true' ? githubPagesBase : '/',
 })
