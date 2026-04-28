@@ -1,0 +1,82 @@
+.auction-answer-phase .question-content-expand {
+  animation: content-expand 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  transform-origin: center center;
+}
+
+@keyframes content-expand {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.auction-answer-phase .question-container {
+  transition:
+    padding 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auction-answer-phase .answer-section {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auction-answer-phase .answer-section--open {
+  max-height: 320px;
+}
+
+.auction-answer-phase .dev-section {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auction-answer-phase .dev-section--open {
+  max-height: 120px;
+}
+
+.auction-answer-phase .answer-block-enter-active {
+  transition:
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auction-answer-phase .answer-block-leave-active {
+  transition:
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auction-answer-phase .answer-block-enter-from,
+.auction-answer-phase .answer-block-leave-to {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+.auction-answer-phase .answer-block-enter-to,
+.auction-answer-phase .answer-block-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.auction-answer-phase .answer-block-item {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: answer-item-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.auction-answer-phase .answer-block-item--delay {
+  animation-delay: 0.1s;
+}
+
+@keyframes answer-item-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,31 @@
+.auction-bidder-flip-card .error-message-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.auction-bidder-flip-card .error-message-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.auction-bidder-flip-card .error-message-enter-from {
+  opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+}
+
+.auction-bidder-flip-card .error-message-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 100px;
+}
+
+.auction-bidder-flip-card .error-message-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 100px;
+}
+
+.auction-bidder-flip-card .error-message-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+}

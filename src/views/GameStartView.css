@@ -1,0 +1,80 @@
+.game-start-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fade-in-enter-active {
+  animation: fade-in 400ms ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.error-message-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.error-message-leave-active {
+  transition: all 0.2s ease-in;
+}
+
+.error-message-enter-from {
+  opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+}
+
+.error-message-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 100px;
+}
+
+.error-message-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+  max-height: 100px;
+}
+
+.error-message-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+  max-height: 0;
+}
+
+.key-modal-enter-active,
+.key-modal-leave-active {
+  transition: opacity 0.25s ease;
+}
+
+.key-modal-enter-active .rounded-card,
+.key-modal-leave-active .rounded-card {
+  transition: transform 0.25s ease;
+}
+
+.key-modal-enter-from,
+.key-modal-leave-to {
+  opacity: 0;
+}
+
+.key-modal-enter-from .rounded-card,
+.key-modal-leave-to .rounded-card {
+  transform: scale(0.95);
+}
+
+.key-modal-enter-to .rounded-card,
+.key-modal-leave-from .rounded-card {
+  transform: scale(1);
+}
+

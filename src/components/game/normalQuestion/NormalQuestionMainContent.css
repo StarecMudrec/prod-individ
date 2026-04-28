@@ -1,0 +1,111 @@
+.question-content-expand {
+  animation: content-expand 0.45s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  transform-origin: center center;
+}
+
+@keyframes content-expand {
+  from {
+    opacity: 0;
+    transform: scale(0.88);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.question-container {
+  transition:
+    padding 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-section {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-section--open {
+  max-height: 320px;
+}
+
+.dev-section {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dev-section--open {
+  max-height: 120px;
+}
+
+.answer-block-enter-active {
+  transition:
+    opacity 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-block-leave-active {
+  transition:
+    opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.answer-block-enter-from,
+.answer-block-leave-to {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+.answer-block-enter-to,
+.answer-block-leave-from {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.answer-block-item {
+  opacity: 0;
+  transform: translateY(8px);
+  animation: answer-item-in 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.answer-block-item--delay {
+  animation-delay: 0.1s;
+}
+
+@keyframes answer-item-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.shout-text {
+  animation: shout 1.2s ease-in-out infinite;
+}
+
+@keyframes shout {
+  0%,
+  100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 0 transparent);
+  }
+  50% {
+    transform: scale(1.08);
+    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15));
+  }
+}
+
+.shout-text--shrink {
+  animation: scale-down-center 0.4s ease-in-out forwards;
+}
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

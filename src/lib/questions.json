@@ -1,0 +1,659 @@
+{
+  "rounds": [
+    {
+      "id": 1,
+      "costs": [100, 200, 300, 400, 500],
+      "themes": [
+        {
+          "id": "r1-t1",
+          "title": "Стартапы",
+          "questions": [
+            {
+              "id": "r1-t1-q1",
+              "cost": 100,
+              "text": "Какой стартап был основан в гараже в 1976 году и стал одной из самых дорогих компаний мира?",
+              "correctAnswer": "Apple",
+              "type": "normal",
+              "acceptedAnswers": ["Эппл", "Apple Inc"]
+            },
+            {
+              "id": "r1-t1-q2",
+              "cost": 200,
+              "text": "Какой термин используется для обозначения начального финансирования стартапа от инвесторов?",
+              "correctAnswer": "Seed funding",
+              "type": "normal",
+              "acceptedAnswers": ["Посевное финансирование", "Посевные инвестиции", "Seed round", "Посевной раунд", "Seed capital"]
+            },
+            {
+              "id": "r1-t1-q3",
+              "cost": 300,
+              "text": "Как называется процесс превращения стартапа в публичную компанию через размещение акций на бирже?",
+              "correctAnswer": "IPO",
+              "type": "normal",
+              "acceptedAnswers": ["Initial Public Offering", "Первичное публичное размещение", "Айпио", "ИПО"]
+            },
+            {
+              "id": "r1-t1-q4",
+              "cost": 400,
+              "text": "Какой стартап был куплен Facebook за 19 миллиардов долларов в 2014 году?",
+              "correctAnswer": "WhatsApp",
+              "type": "normal",
+              "acceptedAnswers": ["Ватсап", "Вацап"]
+            },
+            {
+              "id": "r1-t1-q5",
+              "cost": 500,
+              "text": "Как называется документ, описывающий бизнес-модель и стратегию развития стартапа?",
+              "correctAnswer": "Бизнес-план",
+              "type": "normal",
+              "acceptedAnswers": ["Бизнес план", "Business plan", "Бизнес-планирование", "Бизнес-проект"]
+            }
+          ]
+        },
+        {
+          "id": "r1-t2",
+          "title": "Языки программирования",
+          "questions": [
+            {
+              "id": "r1-t2-q1",
+              "cost": 100,
+              "text": "Какой язык программирования был создан Гвидо ван Россумом и назван в честь комедийного шоу?",
+              "correctAnswer": "Python",
+              "type": "normal",
+              "acceptedAnswers": ["Питон", "Пайтон"]
+            },
+            {
+              "id": "r1-t2-q2",
+              "cost": 200,
+              "text": "Какой язык программирования был разработан в компании Sun Microsystems и теперь принадлежит Oracle?",
+              "correctAnswer": "Java",
+              "type": "normal",
+              "acceptedAnswers": ["Джава", "Ява"]
+            },
+            {
+              "id": "r1-t2-q3",
+              "cost": 300,
+              "text": "Как называется язык программирования, созданный Бренданом Эйхом и изначально называвшийся LiveScript?",
+              "correctAnswer": "JavaScript",
+              "type": "normal",
+              "acceptedAnswers": ["Джаваскрипт", "JS", "Яваскрипт"]
+            },
+            {
+              "id": "r1-t2-q4",
+              "cost": 400,
+              "text": "Какой язык программирования был разработан в Microsoft и является основным для разработки приложений Windows?",
+              "correctAnswer": "C#",
+              "acceptedAnswers": ["C sharp", "си шарп", "си#", "C Sharp", "Си Шарп", "с#"],
+              "type": "normal"
+            },
+            {
+              "id": "r1-t2-q5",
+              "cost": 500,
+              "text": "Какой язык программирования был создан Деннисом Ритчи в Bell Labs и стал основой для многих других языков?",
+              "correctAnswer": "C",
+              "type": "normal",
+              "acceptedAnswers": ["Си", "С"]
+            }
+          ]
+        },
+        {
+          "id": "r1-t3",
+          "title": "Мемы",
+          "questions": [
+            {
+              "id": "r1-t3-q1",
+              "cost": 100,
+              "text": "Какой мем с котиком стал одним из самых популярных в интернете с подписью 'I can has cheezburger'?",
+              "correctAnswer": "Lolcat",
+              "type": "normal",
+              "acceptedAnswers": ["Лолкэт", "Лолкот"]
+            },
+            {
+              "id": "r1-t3-q2",
+              "cost": 200,
+              "text": "Как называется мем с изображением человека, указывающего пальцем на висок, означающий 'думать'?",
+              "correctAnswer": "Think",
+              "type": "normal",
+              "acceptedAnswers": ["Думать", "Thinking", "Think meme", "Мем думать", "Think guy"]
+            },
+            {
+              "id": "r1-t3-q3",
+              "cost": 300,
+              "text": "Какой мем с лягушонком стал символом интернет-культуры и часто используется для выражения различных эмоций?",
+              "correctAnswer": "Pepe",
+              "type": "normal",
+              "acceptedAnswers": ["Пепе", "Pepe the Frog", "Лягушонок Пепе", "Пэпэ"]
+            },
+            {
+              "id": "r1-t3-q4",
+              "cost": 400,
+              "text": "Как называется мем с изображением женщины, кричащей на кота, сидящего за столом?",
+              "correctAnswer": "Woman yelling at cat",
+              "type": "normal",
+              "acceptedAnswers": ["Женщина кричит на кота", "Кричащая женщина и кот", "Woman screaming at cat", "Cat at table meme", "Женщина орет на кота"]
+            },
+            {
+              "id": "r1-t3-q5",
+              "cost": 500,
+              "text": "Какой мем с изображением парня, смотрящего на другую девушку, стал популярным в 2018 году?",
+              "correctAnswer": "Distracted boyfriend",
+              "type": "normal",
+              "acceptedAnswers": ["Отвлекшийся парень", "Парень смотрит на другую", "Distracted man", "Мем с парнем и двумя девушками", "Отвлекающийся парень"]
+            }
+          ]
+        },
+        {
+          "id": "r1-t4",
+          "title": "Боги Древнего Египта",
+          "questions": [
+            {
+              "id": "r1-t4-q1",
+              "cost": 100,
+              "text": "Как звали бога солнца в Древнем Египте, изображаемого с головой сокола?",
+              "correctAnswer": "Ра",
+              "type": "normal",
+              "acceptedAnswers": ["Ra"]
+            },
+            {
+              "id": "r1-t4-q2",
+              "cost": 200,
+              "text": "Как звали бога загробного мира и судьи мертвых в Древнем Египте?",
+              "correctAnswer": "Осирис",
+              "type": "normal",
+              "acceptedAnswers": ["Osiris", "Усир"]
+            },
+            {
+              "id": "r1-t4-q3",
+              "cost": 300,
+              "text": "Как звали богиню любви, красоты и музыки в Древнем Египте?",
+              "correctAnswer": "Хатхор",
+              "type": "normal",
+              "acceptedAnswers": ["Hathor"]
+            },
+            {
+              "id": "r1-t4-q4",
+              "cost": 400,
+              "text": "Как звали бога мудрости и письма, изображаемого с головой ибиса?",
+              "correctAnswer": "Тот",
+              "type": "normal",
+              "acceptedAnswers": ["Thoth", "Джехути", "Tote"]
+            },
+            {
+              "id": "r1-t4-q5",
+              "cost": 500,
+              "text": "Как звали бога пустыни и хаоса, брата Осириса, изображаемого с головой шакала?",
+              "correctAnswer": "Сет",
+              "type": "normal",
+              "acceptedAnswers": ["Set", "Сетх", "Seth"]
+            }
+          ]
+        },
+        {
+          "id": "r1-t5",
+          "title": "Художники",
+          "questions": [
+            {
+              "id": "r1-t5-q1",
+              "cost": 100,
+              "text": "Какой художник написал картину 'Звездная ночь'?",
+              "correctAnswer": "Винсент ван Гог",
+              "acceptedAnswers": ["Vincent van Gogh"],
+              "type": "normal"
+            },
+            {
+              "id": "r1-t5-q2",
+              "cost": 200,
+              "text": "Какой художник создал картину 'Постоянство памяти' с плавящимися часами?",
+              "correctAnswer": "Сальвадор Дали",
+              "type": "normal",
+              "acceptedAnswers": ["Salvador Dali"]
+            },
+            {
+              "id": "r1-t5-q3",
+              "cost": 300,
+              "text": "Какой русский художник написал картину 'Черный квадрат'?",
+              "correctAnswer": "Казимир Малевич",
+              "type": "normal",
+              "acceptedAnswers": ["Kazimir Malevich"]
+            },
+            {
+              "id": "r1-t5-q4",
+              "cost": 400,
+              "text": "Какой художник создал фреску 'Сотворение Адама' в Сикстинской капелле?",
+              "correctAnswer": "Микеланджело",
+              "type": "normal",
+              "acceptedAnswers": ["Michelangelo"]
+            },
+            {
+              "id": "r1-t5-q5",
+              "cost": 500,
+              "text": "Какой художник написал картину 'Девочка с персиками'?",
+              "correctAnswer": "Валентин Серов",
+              "type": "normal",
+              "acceptedAnswers": ["Valentin Serov"]
+            }
+          ]
+        },
+        {
+          "id": "r1-t6",
+          "title": "Математика",
+          "questions": [
+            {
+              "id": "r1-t6-q1",
+              "cost": 100,
+              "text": "Чему равно число Пи с точностью до двух знаков после запятой?",
+              "correctAnswer": "3.14",
+              "type": "normal",
+              "acceptedAnswers": ["3,14", "три целых четырнадцать сотых"]
+            },
+            {
+              "id": "r1-t6-q2",
+              "cost": 200,
+              "text": "Как называется теорема, утверждающая, что квадрат гипотенузы равен сумме квадратов катетов?",
+              "correctAnswer": "Теорема Пифагора",
+              "type": "normal",
+              "acceptedAnswers": ["Pythagorean theorem"]
+            },
+            {
+              "id": "r1-t6-q3",
+              "cost": 300,
+              "text": "Сколько градусов в сумме углов треугольника?",
+              "correctAnswer": "180",
+              "type": "normal",
+              "acceptedAnswers": ["180 градусов", "сто восемьдесят", "180°"]
+            },
+            {
+              "id": "r1-t6-q4",
+              "cost": 400,
+              "text": "Как называется число, которое является основанием натурального логарифма?",
+              "correctAnswer": "e",
+              "type": "normal",
+              "acceptedAnswers": ["Euler's number", "число Эйлера", "экспонента", "2.718", "е"]
+            },
+            {
+              "id": "r1-t6-q5",
+              "cost": 500,
+              "text": "Как называется последовательность чисел, где каждое следующее равно сумме двух предыдущих?",
+              "correctAnswer": "Числа Фибоначчи",
+              "type": "normal",
+              "acceptedAnswers": ["Fibonacci numbers", "Ряд Фибоначчи", "Последовательность Фибоначчи", "Fibonacci sequence"]
+            }
+          ]
+        }
+      ],
+      "specialQuestions": [
+        {
+          "id": "r1-special-cat-1",
+          "themeId": "special-cat",
+          "themeTitle": "Кино",
+          "cost": 0,
+          "text": "Какой фильм стал первым полнометражным анимационным фильмом студии Disney?",
+          "correctAnswer": "Белоснежка и семь гномов",
+          "type": "cat",
+          "acceptedAnswers": ["Snow surface-alt and the Seven Dwarfs", "Белоснежка", "Snow surface-alt", "Белоснежка и 7 гномов"]
+        },
+        {
+          "id": "r1-special-cat-2",
+          "themeId": "special-cat",
+          "themeTitle": "География",
+          "cost": 0,
+          "text": "Какая страна является самой большой по площади в мире?",
+          "correctAnswer": "Россия",
+          "type": "cat",
+          "acceptedAnswers": ["Russia", "РФ", "Российская Федерация", "Russian Federation"]
+        },
+        {
+          "id": "r1-special-auction-1",
+          "themeId": "r1-t1",
+          "themeTitle": "Стартапы",
+          "cost": 0,
+          "text": "Какой стартап был основан Ларри Пейджем и Сергеем Брином в 1998 году?",
+          "correctAnswer": "Google",
+          "type": "auction",
+          "acceptedAnswers": ["Гугл"]
+        },
+        {
+          "id": "r1-special-auction-2",
+          "themeId": "r1-t4",
+          "themeTitle": "Боги Древнего Египта",
+          "cost": 0,
+          "text": "Как звали богиню-мать в Древнем Египте, супругу Осириса и мать Гора?",
+          "correctAnswer": "Исида",
+          "type": "auction",
+          "acceptedAnswers": ["Isis"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "costs": [200, 400, 600, 800, 1000],
+      "themes": [
+        {
+          "id": "r2-t1",
+          "title": "История России",
+          "questions": [
+            {
+              "id": "r2-t1-q1",
+              "cost": 200,
+              "text": "В каком году произошла Октябрьская революция?",
+              "correctAnswer": "1917",
+              "type": "normal",
+              "acceptedAnswers": ["тысяча девятьсот семнадцатый"]
+            },
+            {
+              "id": "r2-t1-q2",
+              "cost": 400,
+              "text": "Как звали первого императора России?",
+              "correctAnswer": "Петр I",
+              "type": "normal",
+              "acceptedAnswers": ["Петр Первый", "Петр Великий", "Peter I", "Peter the Great", "Peter the First"]
+            },
+            {
+              "id": "r2-t1-q3",
+              "cost": 600,
+              "text": "В каком году была основана Москва согласно летописям?",
+              "correctAnswer": "1147",
+              "type": "normal",
+              "acceptedAnswers": ["тысяча сто сорок седьмой"]
+            },
+            {
+              "id": "r2-t1-q4",
+              "cost": 800,
+              "text": "Как назывался период правления Екатерины II в истории России?",
+              "correctAnswer": "Золотой век",
+              "type": "normal",
+              "acceptedAnswers": ["Golden Age"]
+            },
+            {
+              "id": "r2-t1-q5",
+              "cost": 1000,
+              "text": "Как называлась первая русская летопись, написанная монахом Нестором?",
+              "correctAnswer": "Повесть временных лет",
+              "type": "normal",
+              "acceptedAnswers": ["ПВЛ", "The Tale of Bygone Years"]
+            }
+          ]
+        },
+        {
+          "id": "r2-t2",
+          "title": "Физика",
+          "questions": [
+            {
+              "id": "r2-t2-q1",
+              "cost": 200,
+              "text": "С какой скоростью распространяется свет в вакууме?",
+              "correctAnswer": "300000 км/с",
+              "type": "normal",
+              "acceptedAnswers": ["300 000 км/с", "300000 км в секунду", "300 тысяч км/с", "300000 km/s"]
+            },
+            {
+              "id": "r2-t2-q2",
+              "cost": 400,
+              "text": "Как называется единица измерения силы в системе СИ?",
+              "correctAnswer": "Ньютон",
+              "type": "normal",
+              "acceptedAnswers": ["Newton", "N", "Н"]
+            },
+            {
+              "id": "r2-t2-q3",
+              "cost": 600,
+              "text": "Какой закон физики утверждает, что энергия не создается и не уничтожается, а только преобразуется?",
+              "correctAnswer": "Закон сохранения энергии",
+              "type": "normal",
+              "acceptedAnswers": ["Law of conservation of energy", "Первый закон термодинамики"]
+            },
+            {
+              "id": "r2-t2-q4",
+              "cost": 800,
+              "text": "Как называется явление, при котором тело сохраняет состояние покоя или равномерного прямолинейного движения?",
+              "correctAnswer": "Инерция",
+              "type": "normal",
+              "acceptedAnswers": ["Inertia"]
+            },
+            {
+              "id": "r2-t2-q5",
+              "cost": 1000,
+              "text": "Как называется формула, связывающая массу и энергию, открытая Эйнштейном?",
+              "correctAnswer": "E=mc²",
+              "acceptedAnswers": ["E=mc2", "E=mc^2", "E = mc2", "E = mc^2"],
+              "type": "normal"
+            }
+          ]
+        },
+        {
+          "id": "r2-t3",
+          "title": "Литература",
+          "questions": [
+            {
+              "id": "r2-t3-q1",
+              "cost": 200,
+              "text": "Кто написал роман 'Война и мир'?",
+              "correctAnswer": "Лев Толстой",
+              "type": "normal",
+              "acceptedAnswers": ["Лев Николаевич Толстой", "Leo Tolstoy"]
+            },
+            {
+              "id": "r2-t3-q2",
+              "cost": 400,
+              "text": "Как называется произведение Александра Пушкина, начинающееся словами 'Я помню чудное мгновенье'?",
+              "correctAnswer": "К***",
+              "type": "normal",
+              "acceptedAnswers": ["Керн", "Я помню чудное мгновенье", "К*** (Пушкин)", "Анне Керн", "К Анне Керн"]
+            },
+            {
+              "id": "r2-t3-q3",
+              "cost": 600,
+              "text": "Кто написал роман 'Мастер и Маргарита'?",
+              "correctAnswer": "Михаил Булгаков",
+              "type": "normal",
+              "acceptedAnswers": ["Михаил Афанасьевич Булгаков", "Mikhail Bulgakov"]
+            },
+            {
+              "id": "r2-t3-q4",
+              "cost": 800,
+              "text": "Как называется роман Федора Достоевского о студенте Раскольникове?",
+              "correctAnswer": "Преступление и наказание",
+              "type": "normal",
+              "acceptedAnswers": ["Crime and Punishment"]
+            },
+            {
+              "id": "r2-t3-q5",
+              "cost": 1000,
+              "text": "Кто написал поэму 'Мертвые души'?",
+              "correctAnswer": "Николай Гоголь",
+              "type": "normal",
+              "acceptedAnswers": ["Николай Васильевич Гоголь", "Nikolai Gogol"]
+            }
+          ]
+        },
+        {
+          "id": "r2-t4",
+          "title": "Биология",
+          "questions": [
+            {
+              "id": "r2-t4-q1",
+              "cost": 200,
+              "text": "Сколько хромосом у человека?",
+              "correctAnswer": "46",
+              "type": "normal",
+              "acceptedAnswers": ["сорок шесть"]
+            },
+            {
+              "id": "r2-t4-q2",
+              "cost": 400,
+              "text": "Как называется процесс деления клетки, при котором образуются половые клетки?",
+              "correctAnswer": "Мейоз",
+              "type": "normal",
+              "acceptedAnswers": ["Meiosis", "Редукционное деление", "Половое деление"]
+            },
+            {
+              "id": "r2-t4-q3",
+              "cost": 600,
+              "text": "Как называется органелла клетки, отвечающая за синтез белка?",
+              "correctAnswer": "Рибосома",
+              "type": "normal",
+              "acceptedAnswers": ["Ribosome"]
+            },
+            {
+              "id": "r2-t4-q4",
+              "cost": 800,
+              "text": "Как называется процесс, при котором растения преобразуют световую энергию в химическую?",
+              "correctAnswer": "Фотосинтез",
+              "type": "normal",
+              "acceptedAnswers": ["Photosynthesis"]
+            },
+            {
+              "id": "r2-t4-q5",
+              "cost": 1000,
+              "text": "Как называется наука о классификации живых организмов?",
+              "correctAnswer": "Таксономия",
+              "type": "normal",
+              "acceptedAnswers": ["Taxonomy", "Систематика", "Биологическая систематика"]
+            }
+          ]
+        },
+        {
+          "id": "r2-t5",
+          "title": "Космос",
+          "questions": [
+            {
+              "id": "r2-t5-q1",
+              "cost": 200,
+              "text": "Как называется ближайшая к Земле звезда?",
+              "correctAnswer": "Солнце",
+              "type": "normal",
+              "acceptedAnswers": ["Sun"]
+            },
+            {
+              "id": "r2-t5-q2",
+              "cost": 400,
+              "text": "Как называется планета, известная как 'Красная планета'?",
+              "correctAnswer": "Марс",
+              "type": "normal",
+              "acceptedAnswers": ["Mars"]
+            },
+            {
+              "id": "r2-t5-q3",
+              "cost": 600,
+              "text": "Как называется самая большая планета Солнечной системы?",
+              "correctAnswer": "Юпитер",
+              "type": "normal",
+              "acceptedAnswers": ["Jupiter"]
+            },
+            {
+              "id": "r2-t5-q4",
+              "cost": 800,
+              "text": "Кто был первым человеком, побывавшим в космосе?",
+              "correctAnswer": "Юрий Гагарин",
+              "type": "normal",
+              "acceptedAnswers": ["Yuri Gagarin", "Юрий Алексеевич Гагарин"]
+            },
+            {
+              "id": "r2-t5-q5",
+              "cost": 1000,
+              "text": "Как называется галактика, в которой находится наша Солнечная система?",
+              "correctAnswer": "Млечный Путь",
+              "type": "normal",
+              "acceptedAnswers": ["Milky Way"]
+            }
+          ]
+        },
+        {
+          "id": "r2-t6",
+          "title": "Музыка",
+          "questions": [
+            {
+              "id": "r2-t6-q1",
+              "cost": 200,
+              "text": "Сколько струн у классической гитары?",
+              "correctAnswer": "6",
+              "type": "normal",
+              "acceptedAnswers": ["шесть"]
+            },
+            {
+              "id": "r2-t6-q2",
+              "cost": 400,
+              "text": "Как называется группа инструментов в оркестре, включающая скрипки, альты, виолончели и контрабасы?",
+              "correctAnswer": "Струнные",
+              "type": "normal",
+              "acceptedAnswers": ["Струнные инструменты", "String instruments", "Струнно-смычковые", "Смычковые", "Струнная группа"]
+            },
+            {
+              "id": "r2-t6-q3",
+              "cost": 600,
+              "text": "Кто написал оперу 'Евгений Онегин'?",
+              "correctAnswer": "Петр Чайковский",
+              "type": "normal",
+              "acceptedAnswers": ["Петр Ильич Чайковский", "Tchaikovsky"]
+            },
+            {
+              "id": "r2-t6-q4",
+              "cost": 800,
+              "text": "Как называется музыкальное произведение для одного инструмента или голоса с оркестром?",
+              "correctAnswer": "Концерт",
+              "type": "normal",
+              "acceptedAnswers": ["Concert"]
+            },
+            {
+              "id": "r2-t6-q5",
+              "cost": 1000,
+              "text": "Как называется самая высокая певческая партия в опере?",
+              "correctAnswer": "Сопрано",
+              "type": "normal",
+              "acceptedAnswers": ["Soprano"]
+            }
+          ]
+        }
+      ],
+      "specialQuestions": [
+        {
+          "id": "r2-special-cat-1",
+          "themeId": "special-cat",
+          "themeTitle": "Спорт",
+          "cost": 0,
+          "text": "В каком виде спорта разыгрывается Кубок Стэнли?",
+          "correctAnswer": "Хоккей",
+          "type": "cat",
+          "acceptedAnswers": ["Hockey"]
+        },
+        {
+          "id": "r2-special-cat-2",
+          "themeId": "special-cat",
+          "themeTitle": "Химия",
+          "cost": 0,
+          "text": "Какой химический элемент обозначается символом Au?",
+          "correctAnswer": "Золото",
+          "type": "cat",
+          "acceptedAnswers": ["Gold", "Au", "Аурум"]
+        },
+        {
+          "id": "r2-special-auction-1",
+          "themeId": "r2-t2",
+          "themeTitle": "Физика",
+          "cost": 0,
+          "text": "Как называется единица измерения электрического сопротивления?",
+          "correctAnswer": "Ом",
+          "type": "auction",
+          "acceptedAnswers": ["Ohm", "Ω", "Om"]
+        },
+        {
+          "id": "r2-special-auction-2",
+          "themeId": "r2-t5",
+          "themeTitle": "Космос",
+          "cost": 0,
+          "text": "Как называется спутник Земли?",
+          "correctAnswer": "Луна",
+          "type": "auction",
+          "acceptedAnswers": ["Moon"]
+        }
+      ]
+    }
+  ],
+  "finalQuestion": {
+    "id": "final-q1",
+    "themeTitle": "Случайные факты",
+    "text": "Как называется самая длинная река в мире?",
+    "correctAnswer": "Нил",
+    "acceptedAnswers": ["Nile"]
+  }
+}

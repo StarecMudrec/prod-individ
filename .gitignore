@@ -1,0 +1,4 @@
+# Артефакт сборки (npm run build)
+/public
+node_modules
+src/views/text.md

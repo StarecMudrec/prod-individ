@@ -1,0 +1,188 @@
+@import './variables.css';
+
+@font-face {
+  font-family: 'Chicoree Em';
+  src: url('/fonts/ChicoreeEm-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'QR Comic Beta';
+  src: url('/fonts/QRComicBeta.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* TT Norms Pro */
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms Pro';
+  src: url('/fonts/TTNormsPro-BoldItalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Faberge */
+@font-face {
+  font-family: 'Faberge';
+  src: url('/fonts/Faberge-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Faberge';
+  src: url('/fonts/Faberge-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+  body {
+    @apply bg-surface tracking-widest;
+    color: rgb(var(--color-text));
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  .text-shadow-md {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  }
+  .text-shadow-lg {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  .text-shadow-xl {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .text-shadow-none {
+    text-shadow: none;
+  }
+}
+
+/* Hide all scrollbars globally */
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Dev-mode element transitions */
+.dev-mode-enter-active,
+.dev-mode-leave-active {
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dev-mode-enter-from,
+.dev-mode-leave-to {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+.dev-mode-leave-from,
+.dev-mode-enter-to {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dev-mode slide from side (e.g. round summary score editor) */
+.dev-mode-slide-enter-active,
+.dev-mode-slide-leave-active {
+  transition:
+    opacity 0.2s ease,
+    transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dev-mode-slide-enter-from,
+.dev-mode-slide-leave-to {
+  opacity: 0;
+  transform: translateX(1rem);
+}
+.dev-mode-slide-leave-from,
+.dev-mode-slide-enter-to {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Round summary table: smooth reorder when places change */
+.round-summary-list-move {
+  transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.320, 1);
+}
+
+/* Override Ant Design button styles to use primary color */
+.ant-btn.bg-primary:not(:disabled):not(.ant-btn-loading) {
+  background-color: rgb(var(--color-primary)) !important;
+  border-color: rgb(var(--color-primary)) !important;
+}
+
+.ant-btn.bg-primary:hover:not(:disabled):not(.ant-btn-loading) {
+  background-color: rgb(var(--color-primary) / 0.9) !important;
+  border-color: rgb(var(--color-primary) / 0.9) !important;
+}

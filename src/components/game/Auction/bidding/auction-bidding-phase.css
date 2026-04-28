@@ -1,0 +1,47 @@
+.auction-bidding-phase .player-card {
+  transition:
+    opacity 0.35s ease,
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    background 0.35s ease;
+}
+
+.auction-bidding-phase .player-disabled-stripes {
+  background: linear-gradient(
+    45deg,
+    rgb(var(--color-button-default) / 1) 15%,
+    transparent 15%,
+    transparent 50%,
+    rgb(var(--color-button-default) / 1) 50%,
+    rgb(var(--color-button-default) / 1) 65%,
+    transparent 65%
+  );
+  background-size: 10px 10px;
+}
+
+.auction-bidding-phase .auction-bidder-row {
+  position: relative;
+}
+
+.auction-bidding-phase .auction-bidder-list-move,
+.auction-bidding-phase .auction-bidder-list-enter-active,
+.auction-bidding-phase .auction-bidder-list-leave-active {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.auction-bidding-phase .auction-bidder-list-enter-from,
+.auction-bidding-phase .auction-bidder-list-leave-to {
+  opacity: 0;
+  transform: translateY(4px);
+}
+
+.auction-bidding-phase .auction-turn-indicator-enter-active,
+.auction-bidding-phase .auction-turn-indicator-leave-active {
+  transition: all 0.3s ease;
+}
+
+.auction-bidding-phase .auction-turn-indicator-enter-from,
+.auction-bidding-phase .auction-turn-indicator-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+}
